@@ -12,7 +12,9 @@ const [todos, setTodos] = useState([])
             setTodos(res.data)
         }
         fetchData()
-    })
+    }, [])
+
+    
     return (
         <div className="todosContainer">
             <Todos todos={todos} />
