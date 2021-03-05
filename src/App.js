@@ -1,9 +1,15 @@
+// import { Switch, Route } from 'react-router-dom';
+
+import Header from './components/Header';
+
+import routes from './config/routes'
 
 
 function App() {
   return (
     <div className="container">
-      <h1>Hello :)</h1>
+      <Header />
+      {routes}
     </div>
   );
 }
