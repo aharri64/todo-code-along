@@ -12,6 +12,11 @@ class TodoModel {
         // this is going to take time, it is a promise
         return request
     }
+    static create = (todo) => {
+        //post request sending the todo object as the second argument
+        let request = axios.post(endPoint, todo);
+        return request
+    }
     // methods to update delete etc.
 }
 
